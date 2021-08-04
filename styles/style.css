@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#FEFED5;
+    color:#2F2E41;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*Acá comienza el css del header que contiene la barra de navegación*/
+header{
+    background-color: coral;
+    padding: 25px 0;
+    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.navsuperior{
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+    word-spacing: 1rem;
+    letter-spacing: 2px;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/*Clase especial para Contacto*/
+.navsuperior .navcontacto {
+    border-radius: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+.navcontacto a {
+    color: coral;
+}
+/*Hover de la barra de navegación*/
+nav ul li :hover{
+    font-weight: bold;
+    transition: 1s;
+}
+/*Acá comienza el css del section presentación (texto e imagen)*/
+.presentacion{
+    margin: 200px 90px;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 90px;
+}
+
+.caja-texto{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+.presentacion .caja-texto h1{
+    color: #35D0BA;
+    margin: 10px 0 10px;
+}
+
+.caja-imagenprincipal{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.imagen-principal{
+    width: 90%;
+}
+
+.presentacion button{
+    background-color:#35D0BA;
+    border: 0px;
+    padding: 8px;
+    margin-top: 40px;
+    color: #FEFED5;
+    border-radius: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Hover de Lo que hago*/
+button:hover{
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+/*Acá comienza el css del section Mis Conocimientos*/
+.titulos{
+    text-align: center;
+    margin: 10px 100px;
+    padding: 5px;        
+}
+
+.titulos p{
+    width: 100vh;
+    margin: 8vh auto;
+}
+/*Caja padre*/
+.contenedordecajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+/*Divs que contienen un icono y un h2*/
+.iconos{
+    border: 1px solid gray;
+    width: 200px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+/*Iconos*/
+.contenedordecajas .iconos .misdevicon{
+    width: 100px;
+    margin: auto;
+    font-size: 100px;
+    text-align: center;
+}
+/*Palabras en mayúscula*/
+.contenedordecajas .iconos .mayuscula{
+    text-transform: uppercase;
+}
+/*Hover de las cajas de Mis Conocimientos*/
+.contenedordecajas :hover{
+    border: 1px solid coral;
+    transition: 1.5s;
+}
+
+.contenedordecajas .iconos :hover{
+    border: none;
+}
+/*Acá comienza el css del section Cita*/
+.cita{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #35D0BA;
+    color: white;
+    margin-top: 100px;
+    font-size: 1.2em;
+}
+
+.cita h3{
+    margin-top: 20px;
+}
+
+.comillas{
+    width: 150px;
+}
+/*Acá comienza el css del section Mis Proyectos*/
+.titulos-proyectos{
+    text-align: center;
+    margin: 80px 100px;
+    padding: 5px;
+}
+
+.titulos-proyectos p{
+    width: 100vh;
+    margin: 8vh auto;
+}
+/*Caja Padre 2*/
+.contenedordecajas2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+/*Divs que contienen un link, una imagen svg y un h2*/
+.imagenes{
+    border: 1px solid gray;
+    width: 215px;
+    margin: 10px 40px;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagenes a{
+    color: #2F2E41;
+}
+
+img{
+    max-width: 100%;
+}
+/*Hover de las cajas de Mis Proyectos*/
+.contenedordecajas2 :hover{
+    border: 1px solid #35D0BA;
+    transition: 1.5s;
+}
+
+.contenedordecajas2 .imagenes :hover{
+    border: none;
+}
+/*Acá comienza el css del section Contacto*/
+.contacto{
+    margin: 7%;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFCD3C;
+    color: white;
+    padding: 90px;
+    align-items: center;
+}
+/*Caja padre con h1, p e iconos*/
+.contactame{
+    width: 50%;
+    margin-right: 10%;
+    margin-bottom: 6%;    
+}
+
+.redes{
+    /* margin-top: 5%; */
+    font-weight: bold;
+    width: 80%;
+}
+/*Div hijo con la lista que dentro tiene: link, icono en el circulo y texto*/
+.iconoscirculo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%; 
+}
+
+.contacto .contactame .redes ul li{
+    text-decoration: none;
+    display: flex;  
+}
+/*Div hijo con el css para el icono dentro del circulo*/
+.iconoscirculo .circulo{
+    border-radius: 50%;
+    padding: 6px;
+    margin: 1px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    display:flex;
+    align-items: baseline;
+}
+/*Clase dada a los iconos*/
+.misredes{
+    color: white;
+}
+/*Hover para las redes*/
+.links:hover .circulo{
+    background-color:#2F2E41;
+    transition: background-color 1s;
+}
+.links:hover .texto_icono{
+    color:#2F2E41;
+    transition: color 1s;
+}
+/*Acá comienza el css del Formulario que está dentro del section Contacto*/
+.formulario{
+    font-weight: bold;
+}
+/*Div que contiene Nombre y Apellido*/
+.nombre-apellido{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto_contenidos{
+    display: flex;
+    flex-direction: row;
+} 
+.formulario input{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 8px;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.formulario .email{ 
+    margin-bottom: 5%;
+} 
+
+.formulario .comentarios {
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 30px;
+    width:300px;
+    margin-top: 5px;
+}
+    
+.formulario .submit {
+    width: 100px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+.formulario p{
+    margin-top: 10px;
+}
+/*Hover para Enviar!*/    
+.formulario .submit:hover {
+    background-color: coral;
+    color: white;
+    transition: backround-color color 1s;
+}
+/*Acá comienza el css del footer*/
+footer{
+    border: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+/*Barra de navegación del footer*/
+.navfooter ul li a{
+    letter-spacing: 3px;
+}
+
+.navfooter ul li{
+    margin-right: 5px;
+}
+/*Caja padre que contiene los iconos de redes sociales con link*/
+.redesfooter{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+/*Divs hijos con el css para el círculo donde están los iconos*/
+.redesfooter .circulo{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 0px 4px;
+    background-color:#2F2E41;
+    display: flex;
+    justify-content: center;
+}
+
+.redesfooter .circulo i{
+    margin: 10px;
+}
+/*Hover en los iconos*/
+.redesfooter .circulo :hover{
+    background-color: gray;
+    transition: background-color 1s;
+}
+/*Hover en la barra de navegación*/
+.navfooter ul li :hover{
+    color: rgb(250, 136, 94);
+    font-weight: normal;
+}
+/*Css del corazón dentro de p*/
+.corazon{
+    color:#55e0cb;
+}
+
+/*Acá comienza el css responsivo*/
+@media (max-width: 1000px) {
+    header {
+      display: none;      
+    }
+}
+
+@media (max-width: 1024px) {
+    .presentacion {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;      
+    }
+}
+
+@media (max-width: 500px){
+    .presentacion{
+        padding: 10px;
+        background-color: #FEFED5;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .presentacion{
+        text-align: center;
+    }
+    .presentacion h1{
+        text-align: center;
+    }
+    .presentacion p{
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagen-principal {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 830px) {
+    .titulos {
+        text-align: center;
+        width: auto;
+    }
+    .titulos p{
+        text-align: center;
+        width: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulos {
+        text-align: center;
+     
+    }
+    .titulos p{
+        text-align: center;
+        width: 40vh;
+    }
+    
+}
+
+@media (max-width: 480px){
+    .titulos {
+        text-align: center;
+    }
+    .titulos p{
+        text-align: center;
+        width: 30vh;
+    }
+}
+
+@media (max-width: 390px){
+    .titulos {
+        text-align: center;
+    }
+    .titulos p{
+        text-align: center;
+        width: 25vh;
+    }
+}
+
+@media (max-width: 320px){
+    .titulos {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 570px) {
+    .contenedordecajas {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+    }
+    .iconos {
+        width: 100px;
+    }
+}
+
+@media (max-width: 530px){
+    .contenedordecajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 830px) {
+    .titulos-proyectos {
+        text-align: center;
+        width: auto;
+    }
+    .titulos-proyectos p{
+        text-align: center;
+        width: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulos-proyectos {
+        text-align: center;
+     
+    }
+    .titulos-proyectos p{
+        text-align: center;
+        width: 40vh;
+    }    
+}
+
+@media (max-width: 480px){
+    .titulos-proyectos {
+        text-align: center;
+    }
+    .titulos-proyectos p{
+        text-align: center;
+        width: 30vh;
+    }
+}
+
+@media (max-width: 390px){
+    .titulos-proyectos {
+        text-align: center;
+    }
+    .titulos-proyectos p{
+        text-align: center;
+        width: 25vh;
+    }
+}
+
+@media (max-width: 320px){
+    .titulos-proyectos {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedordecajas2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedordecajas2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 960px) {
+    .contacto_contenidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .contactame{
+        width: 100%;
+    }
+    .redes{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacto_contenidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .contactame{
+        width: 100%;
+        text-align: center;
+    }
+    .nombre-apellido {
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario div{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario .comentarios{
+        width: 150px;
+    }
+    .iconoscirculo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px){
+    .contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+    .contactame {
+        width: 80%;
+    }
+}
+
+@media (max-width: 675px) {
+    .redes ul li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    footer nav ul li{
+      display: none;      
+    }
+}
+/*Acá termina mi css*/
