@@ -123,7 +123,7 @@ button:hover{
     padding: 10px 5px;
     color: white;
     border-radius: 10px;
-    background-color:#38dfc6;
+    background-color:#35d3bb;
     border: 1px solid white;
     font-family: 'Work Sans', sans-serif;
         
@@ -188,7 +188,6 @@ button:hover{
     margin-top: 100px;
     font-size: 1.2em;
     color: black;
-    font-family: 'Work Sans', sans-serif;
 }
 
 .cita h3{
@@ -207,7 +206,7 @@ button:hover{
     padding: 5px;
     color: white;
     border-radius: 10px;
-    background-color:#38dfc6;
+    background-color: #35d3bb;
     border: 1px solid white;
     font-family: 'Work Sans', sans-serif;
 }
@@ -618,7 +617,7 @@ footer{
     } 
     .contactame{
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .nombre-apellido {
         display: flex;
@@ -660,13 +659,10 @@ footer{
     footer nav ul li{
       display: none;      
     }
-}
-
-@media (max-width: 480px) {
-    footer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;      
+    .redesfooter{
+        margin: 0 auto;
     }
 }
+
+
 /*Acá termina mi css*/
