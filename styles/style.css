@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:#FEFED5;
+    background-color:#55e0cb;
     color:#2F2E41;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -68,6 +68,7 @@ nav ul li :hover{
     flex-direction: row;
     justify-content: center;
     padding: 90px;
+    border-radius: 10px;
 }
 
 .caja-texto{
@@ -80,6 +81,13 @@ nav ul li :hover{
 .presentacion .caja-texto h1{
     color: #35D0BA;
     margin: 10px 0 10px;
+    font-family: 'Lobster', cursive;
+}
+
+.presentacion .caja-texto p{
+    font-size: large;
+    padding: 10px;
+    width: 80%;
 }
 
 .caja-imagenprincipal{
@@ -97,7 +105,6 @@ nav ul li :hover{
     border: 0px;
     padding: 8px;
     margin-top: 40px;
-    color: #FEFED5;
     border-radius: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -112,12 +119,20 @@ button:hover{
 .titulos{
     text-align: center;
     margin: 10px 100px;
-    padding: 5px;        
+    padding: 5px;
+    color: white;        
+}
+
+.titulos h1{
+    font-size: xx-large;
 }
 
 .titulos p{
     width: 100vh;
     margin: 8vh auto;
+    font-weight: bold;
+    font-size: large;
+    
 }
 /*Caja padre*/
 .contenedordecajas{
@@ -128,7 +143,7 @@ button:hover{
 }
 /*Divs que contienen un icono y un h2*/
 .iconos{
-    border: 1px solid gray;
+    border: 2px solid gray;
     width: 200px;
     align-items: center;
     margin: 10px;
@@ -151,7 +166,7 @@ button:hover{
 }
 /*Hover de las cajas de Mis Conocimientos*/
 .contenedordecajas :hover{
-    border: 1px solid coral;
+    border: 2px solid coral;
     transition: 1.5s;
 }
 
@@ -164,14 +179,15 @@ button:hover{
     justify-content: center;
     padding: 50px;
     text-align: center;
-    background-color: #35D0BA;
-    color: white;
+    background-color: coral;
     margin-top: 100px;
     font-size: 1.2em;
+    color: black;
 }
 
 .cita h3{
     margin-top: 20px;
+    
 }
 
 .comillas{
@@ -182,11 +198,18 @@ button:hover{
     text-align: center;
     margin: 80px 100px;
     padding: 5px;
+    color: white;
+}
+
+.titulos-proyectos h1{
+    font-size: xx-large;
 }
 
 .titulos-proyectos p{
     width: 100vh;
     margin: 8vh auto;
+    font-weight: bold;
+    font-size: large;
 }
 /*Caja Padre 2*/
 .contenedordecajas2{
@@ -197,7 +220,7 @@ button:hover{
 }
 /*Divs que contienen un link, una imagen svg y un h2*/
 .imagenes{
-    border: 1px solid gray;
+    border: 2px solid gray;
     width: 215px;
     margin: 10px 40px;
     border-radius: 3px;
@@ -218,7 +241,7 @@ img{
 }
 /*Hover de las cajas de Mis Proyectos*/
 .contenedordecajas2 :hover{
-    border: 1px solid #35D0BA;
+    border: 2px solid coral;
     transition: 1.5s;
 }
 
@@ -246,7 +269,6 @@ img{
 }
 
 .redes{
-    /* margin-top: 5%; */
     font-weight: bold;
     width: 80%;
 }
@@ -411,27 +433,31 @@ footer{
       display: flex;
       flex-direction: column;
       text-align: center;
-      justify-content: center;      
+      justify-content: center;
+      width: 50%;      
     }
+    .caja-texto{
+        margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 500px){
     .presentacion{
-        padding: 10px;
-        background-color: #FEFED5;
+        padding: 20px;
+        margin: 30px;
         text-align: center;
+        display: flex;
+    }
+    .caja-texto{
+        margin: 0 auto;
+        
     }
 }
 
 @media (max-width: 320px){
-    .presentacion{
-        text-align: center;
-    }
-    .presentacion h1{
-        text-align: center;
-    }
     .presentacion p{
-        text-align: center;
+        font-weight: bold;
         font-size: medium;
     }
 }
