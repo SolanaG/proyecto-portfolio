@@ -60,7 +60,7 @@ nav ul li :hover{
 }
 /*Acá comienza el css del section presentación (texto e imagen)*/
 .presentacion{
-    margin: 200px 90px;
+    margin: 100px 90px;
     width: auto;
     height: 100%;
     background-color: white;
@@ -144,7 +144,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 /*Divs que contienen un icono y un h2*/
 .iconos{
@@ -522,6 +522,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 500px;
+        margin-top: 50px;
     }
     .iconos {
         width: 100px;
@@ -660,7 +661,7 @@ footer{
       display: none;      
     }
     .redesfooter{
-        margin: 0 auto;
+        margin: 10px auto;
     }
 }
 
