@@ -69,6 +69,7 @@ nav ul li :hover{
     justify-content: center;
     padding: 90px;
     border-radius: 10px;
+    align-items: center;
 }
 
 .caja-texto{
@@ -118,9 +119,14 @@ button:hover{
 /*Acá comienza el css del section Mis Conocimientos*/
 .titulos{
     text-align: center;
-    margin: 10px 100px;
-    padding: 5px;
-    color: white;        
+    margin: 2px 200px;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 10px;
+    background-color:#38dfc6;
+    border: 1px solid white;
+    font-family: 'Work Sans', sans-serif;
+        
 }
 
 .titulos h1{
@@ -129,8 +135,7 @@ button:hover{
 
 .titulos p{
     width: 100vh;
-    margin: 8vh auto;
-    font-weight: bold;
+    margin: 4vh auto;
     font-size: large;
     
 }
@@ -183,10 +188,12 @@ button:hover{
     margin-top: 100px;
     font-size: 1.2em;
     color: black;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .cita h3{
     margin-top: 20px;
+    font-family: 'Lobster', cursive;
     
 }
 
@@ -196,9 +203,13 @@ button:hover{
 /*Acá comienza el css del section Mis Proyectos*/
 .titulos-proyectos{
     text-align: center;
-    margin: 80px 100px;
+    margin: 80px 200px;
     padding: 5px;
     color: white;
+    border-radius: 10px;
+    background-color:#38dfc6;
+    border: 1px solid white;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .titulos-proyectos h1{
@@ -207,8 +218,7 @@ button:hover{
 
 .titulos-proyectos p{
     width: 100vh;
-    margin: 8vh auto;
-    font-weight: bold;
+    margin: 4vh auto;
     font-size: large;
 }
 /*Caja Padre 2*/
@@ -253,6 +263,7 @@ img{
     margin: 7%;
     width: auto;
     border-radius: 5px;
+    border: 1px solid white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -269,14 +280,15 @@ img{
 }
 
 .redes{
-    font-weight: bold;
     width: 80%;
 }
+
 /*Div hijo con la lista que dentro tiene: link, icono en el circulo y texto*/
 .iconoscirculo{
     display: flex;
     flex-direction: column;
-    margin-right: 5%; 
+    margin-right: 5%;
+    font-weight: bold; 
 }
 
 .contacto .contactame .redes ul li{
@@ -434,10 +446,17 @@ footer{
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      width: 50%;      
+      align-items: center;
+      width: 50%;  
+      margin: 0 auto;    
     }
     .caja-texto{
         margin: 0 auto;
+        text-align: center;
+    }
+    .caja-texto p{
+        margin: 0 auto;
+        text-align: center;
     }
     
 }
@@ -445,20 +464,18 @@ footer{
 @media (max-width: 500px){
     .presentacion{
         padding: 20px;
-        margin: 30px;
+        margin: 0 auto;
         text-align: center;
-        display: flex;
     }
-    .caja-texto{
+    /*.caja-texto{
         margin: 0 auto;
         
-    }
+    }*/
 }
 
 @media (max-width: 320px){
     .presentacion p{
-        font-weight: bold;
-        font-size: medium;
+        font-size: small;
     }
 }
 
@@ -468,53 +485,36 @@ footer{
     }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1024px) {
+    .titulos {
+        margin-top: 10%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos p{
+        margin: 2px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 780px) {
     .titulos {
         text-align: center;
         width: auto;
     }
     .titulos p{
         text-align: center;
-        width: 60vh;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     .titulos {
         text-align: center;
-     
-    }
-    .titulos p{
-        text-align: center;
-        width: 40vh;
-    }
-    
-}
-
-@media (max-width: 480px){
-    .titulos {
-        text-align: center;
-    }
-    .titulos p{
-        text-align: center;
-        width: 30vh;
-    }
-}
-
-@media (max-width: 390px){
-    .titulos {
-        text-align: center;
-    }
-    .titulos p{
-        text-align: center;
-        width: 25vh;
-    }
-}
-
-@media (max-width: 320px){
-    .titulos {
-        text-align: center;
-        margin: 10px;
+        width: auto;
+        margin: 30px 20px;
     }
 }
 
@@ -536,70 +536,56 @@ footer{
         justify-content: center;
         width: 100%;
     }
+    .iconos{
+        border: 1px solid gray;
+    }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1024px) {
+    .titulos-proyectos {
+        margin-top: 10%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos-proyectos p{
+        margin: 2px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 780px) {
     .titulos-proyectos {
         text-align: center;
         width: auto;
     }
     .titulos-proyectos p{
         text-align: center;
-        width: 60vh;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     .titulos-proyectos {
         text-align: center;
-     
-    }
-    .titulos-proyectos p{
-        text-align: center;
-        width: 40vh;
-    }    
-}
-
-@media (max-width: 480px){
-    .titulos-proyectos {
-        text-align: center;
-    }
-    .titulos-proyectos p{
-        text-align: center;
-        width: 30vh;
-    }
-}
-
-@media (max-width: 390px){
-    .titulos-proyectos {
-        text-align: center;
-    }
-    .titulos-proyectos p{
-        text-align: center;
-        width: 25vh;
-    }
-}
-
-@media (max-width: 320px){
-    .titulos-proyectos {
-        text-align: center;
-        margin: 10px;
+        width: auto;
+        margin: 30px 20px;
     }
 }
 
 @media (max-width: 1024px) {
     .contenedordecajas2 {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 768px) {
-    .contenedordecajas2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+@media (max-width: 320px) {
+    .imagenes{
+        margin: 10px auto;
+        border: 1px solid gray;
     }
 }
 
@@ -673,6 +659,14 @@ footer{
 @media (max-width: 768px) {
     footer nav ul li{
       display: none;      
+    }
+}
+
+@media (max-width: 480px) {
+    footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
     }
 }
 /*Acá termina mi css*/
