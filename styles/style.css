@@ -226,6 +226,7 @@ button:hover{
     flex-wrap: wrap;
     justify-content:space-between;
     
+    
 }
 /*Divs que contienen un link, una imagen svg y un h2*/
 .imagenes{
@@ -521,7 +522,8 @@ footer{
         display: flex;
         flex-direction: row;
         width: 500px;
-        margin-top: 20px;
+        margin-top: 0;
+        
     }
     .iconos {
         width: 100px;
@@ -570,6 +572,16 @@ footer{
         text-align: center;
         width: auto;
         margin: 30px 20px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .contenedordecajas2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 800px;
+        margin: 10px auto;
     }
 }
 
