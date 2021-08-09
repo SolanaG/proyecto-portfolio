@@ -58,6 +58,14 @@ nav ul li :hover{
     font-weight: bold;
     transition: 1s;
 }
+
+/*Css responsivo del header*/
+@media (max-width: 1000px) {
+    header {
+      display: none;      
+    }
+}
+
 /*Acá comienza el css del section presentación (texto e imagen)*/
 .presentacion{
     margin: 100px;
@@ -116,6 +124,47 @@ button:hover{
     opacity: 0.6;
     transition: opacity 1s;
 }
+/*Acá comienza el css responsivo del section presentación*/
+@media (max-width: 1024px) {
+    .presentacion {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 50%;  
+      margin: 0 auto;    
+    }
+    .caja-texto{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .caja-texto p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 500px){
+    .presentacion{
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .presentacion p{
+        font-size: small;
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagen-principal {
+        max-width: 100%;
+    }
+}
+
 /*Acá comienza el css del section Mis Conocimientos*/
 .titulos{
     text-align: center;
@@ -178,6 +227,63 @@ button:hover{
 .contenedordecajas .iconos :hover{
     border: none;
 }
+/*Acá comienza el css responsivo del section Mis Conocimientos*/
+@media (max-width: 1024px) {
+    .titulos {
+        margin-top: 10%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos p{
+        margin: 2px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .titulos {
+        text-align: center;
+        width: auto;
+    }
+    .titulos p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .titulos {
+        text-align: center;
+        width: auto;
+        margin: 30px 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .contenedordecajas {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        margin-top: 0;
+        
+    }
+    .iconos {
+        width: 100px;
+    }
+}
+
+@media (max-width: 530px){
+    .contenedordecajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .iconos{
+        border: 1px solid gray;
+    }
+}
 /*Acá comienza el css del section Cita*/
 .cita{
     display: flex;
@@ -199,6 +305,7 @@ button:hover{
 .comillas{
     width: 150px;
 }
+
 /*Acá comienza el css del section Mis Proyectos*/
 .titulos-proyectos{
     text-align: center;
@@ -257,6 +364,63 @@ img{
 
 .contenedordecajas2 .imagenes :hover{
     border: none;
+}
+/*Acá comienza el css responsivo del section Mis Proyectos*/
+@media (max-width: 1024px) {
+    .titulos-proyectos {
+        margin-top: 10%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos-proyectos p{
+        margin: 2px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 780px) {
+    .titulos-proyectos {
+        text-align: center;
+        width: auto;
+    }
+    .titulos-proyectos p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .titulos-proyectos {
+        text-align: center;
+        width: auto;
+        margin: 30px 20px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .contenedordecajas2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedordecajas2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .imagenes{
+        margin: 10px auto;
+        border: 1px solid gray;
+    }
 }
 /*Acá comienza el css del section Contacto*/
 .contacto{
@@ -378,228 +542,7 @@ img{
     color: white;
     transition: backround-color color 1s;
 }
-/*Acá comienza el css del footer*/
-footer{
-    border: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    background-color: gray;
-    color: white;
-    text-align: center;
-}
-/*Barra de navegación del footer*/
-.navfooter ul li a{
-    letter-spacing: 3px;
-}
-
-.navfooter ul li{
-    margin-right: 5px;
-}
-/*Caja padre que contiene los iconos de redes sociales con link*/
-.redesfooter{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-}
-/*Divs hijos con el css para el círculo donde están los iconos*/
-.redesfooter .circulo{
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    margin: 0px 4px;
-    background-color:#2F2E41;
-    display: flex;
-    justify-content: center;
-}
-
-.redesfooter .circulo i{
-    margin: 10px;
-}
-/*Hover en los iconos*/
-.redesfooter .circulo :hover{
-    background-color: gray;
-    transition: background-color 1s;
-}
-/*Hover en la barra de navegación*/
-.navfooter ul li :hover{
-    color: rgb(250, 136, 94);
-    font-weight: normal;
-}
-/*Css del corazón dentro de p*/
-.corazon{
-    color:#55e0cb;
-}
-
-/*Acá comienza el css responsivo*/
-@media (max-width: 1000px) {
-    header {
-      display: none;      
-    }
-}
-
-@media (max-width: 1024px) {
-    .presentacion {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      width: 50%;  
-      margin: 0 auto;    
-    }
-    .caja-texto{
-        margin: 0 auto;
-        text-align: center;
-    }
-    .caja-texto p{
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-}
-
-@media (max-width: 500px){
-    .presentacion{
-        padding: 20px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    /*.caja-texto{
-        margin: 0 auto;
-        
-    }*/
-}
-
-@media (max-width: 320px){
-    .presentacion p{
-        font-size: small;
-    }
-}
-
-@media (max-width: 1024px) {
-    .imagen-principal {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .titulos {
-        margin-top: 10%;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .titulos p{
-        margin: 2px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 780px) {
-    .titulos {
-        text-align: center;
-        width: auto;
-    }
-    .titulos p{
-        text-align: center;
-    }
-}
-
-@media (max-width: 660px) {
-    .titulos {
-        text-align: center;
-        width: auto;
-        margin: 30px 20px;
-    }
-}
-
-@media (max-width: 570px) {
-    .contenedordecajas {
-        display: flex;
-        flex-direction: row;
-        width: 500px;
-        margin-top: 0;
-        
-    }
-    .iconos {
-        width: 100px;
-    }
-}
-
-@media (max-width: 530px){
-    .contenedordecajas {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-    .iconos{
-        border: 1px solid gray;
-    }
-}
-
-@media (max-width: 1024px) {
-    .titulos-proyectos {
-        margin-top: 10%;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .titulos-proyectos p{
-        margin: 2px;
-        width: 100%;
-    }
-    
-}
-
-@media (max-width: 780px) {
-    .titulos-proyectos {
-        text-align: center;
-        width: auto;
-    }
-    .titulos-proyectos p{
-        text-align: center;
-    }
-}
-
-@media (max-width: 660px) {
-    .titulos-proyectos {
-        text-align: center;
-        width: auto;
-        margin: 30px 20px;
-    }
-}
-
-@media (max-width: 1125px) {
-    .contenedordecajas2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 800px;
-        margin: 10px auto;
-    }
-}
-
-@media (max-width: 1024px) {
-    .contenedordecajas2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 320px) {
-    .imagenes{
-        margin: 10px auto;
-        border: 1px solid gray;
-    }
-}
-
+/*Acá comienza el css responsivo del section Contacto*/
 @media (max-width: 768px) {
     .contacto {
         display: flex;
@@ -666,7 +609,61 @@ footer{
         flex-wrap: wrap;
     }
 }
+/*Acá comienza el css del footer*/
+footer{
+    border: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+/*Barra de navegación del footer*/
+.navfooter ul li a{
+    letter-spacing: 3px;
+}
 
+.navfooter ul li{
+    margin-right: 5px;
+}
+/*Caja padre que contiene los iconos de redes sociales con link*/
+.redesfooter{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+/*Divs hijos con el css para el círculo donde están los iconos*/
+.redesfooter .circulo{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 0px 4px;
+    background-color:#2F2E41;
+    display: flex;
+    justify-content: center;
+}
+
+.redesfooter .circulo i{
+    margin: 10px;
+}
+/*Hover en los iconos*/
+.redesfooter .circulo :hover{
+    background-color: gray;
+    transition: background-color 1s;
+}
+/*Hover en la barra de navegación*/
+.navfooter ul li :hover{
+    color: rgb(250, 136, 94);
+    font-weight: normal;
+}
+/*Css del corazón dentro de p*/
+.corazon{
+    color:#55e0cb;
+}
+/*Acá comienza el css responsivo del footer*/
 @media (max-width: 768px) {
     footer nav ul li{
       display: none;      
@@ -675,6 +672,4 @@ footer{
         margin: 10px auto;
     }
 }
-
-
 /*Acá termina mi css*/
